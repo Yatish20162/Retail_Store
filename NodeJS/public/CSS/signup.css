@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    background-color: gray;
+}
+.main
+{
+    width: 600px;
+    height: 1075px;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    border: 3px solid darkgreen;
+}
+
+.content{
+    
+    float: left;
+    width: 600px;
+    height: inherit;
+    background-color: aliceblue;
+    border-radius: 30px;
+    border-color: darkgreen;
+    box-shadow: 10px;
+}
+
+
+#logo{
+    margin-left: 15px;
+    margin-top: 15px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    background: url(/Pics/Screenshot\ \(45\).png);
+    background-repeat: none;
+    background-size: 105%;
+}
+#heading{
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 350px;
+    height: 100px;
+    background-color: aliceblue;
+    margin-top: 80px;
+    margin-left: 15px;
+    font-style: oblique;
+    font-family: "Lucida Console";
+    color: darkblue;
+
+}
+#heading h2{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    font-weight: bold;
+    font-size: 35px;
+    color: darkblue;
+}
+
+#email{
+    background-color: aliceblue;
+}
+#email input{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    border-width: 4px;
+    border-color: darkgreen;
+    background-color: aliceblue;
+}
+
+#password{
+    background-color: aliceblue;
+}
+#password input{
+
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 350px;
+    height: 50px;
+    border-radius: 15px;
+    border-width: 4px;
+    border-color: darkgreen;
+    background-color: aliceblue;
+}
+#buttons{
+    /* margin-top: 10px; */
+    background-color: aliceblue;
+    width: inherit;
+    height: 100px;
+}
+#buttons a{
+    float: right;
+    text-decoration: none;
+    background-color: inherit;
+    color: red;
+}
+#buttons input{
+    margin-left: 15px;
+}
+#login{
+    background-color: aliceblue;
+    margin-top: 15px;
+    margin-left: 65px;
+    float: left;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: darkgreen;
+    border-width: 3px;
+}
+#create{
+    background-color: aliceblue;
+    margin-top: 15px;
+    margin-left: 25px;
+    float: left;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: darkgreen;
+    border-width: 3px;
+}
+#login:hover{
+    background-color: darkgreen;
+    border-color: black;
+    font-weight: bold;
+    color: white;
+}
+#create:hover{
+    background-color: darkgreen;
+    border-color: black;
+    font-weight: bold;
+    color: white;
+}
+

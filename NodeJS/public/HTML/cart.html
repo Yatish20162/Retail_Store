@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cart </title>
+    <script src="../JS/jquery-1.8.2.min.js"></script>
+    <link rel="stylesheet" href="../CSS/cart.css">
+    <script src="../JS/cart.js"></script>
+
+</head>
+
+<body>
+    <center>
+        <h1> Shopping Cart </h1>
+        <div class="CartItems">
+            <div>
+                    Net Bill
+                    <input type="button" value="NetBill" id="Net">
+                    <input type="text">
+             </div>
+                
+            <div class="section">
+                
+                <div class="elements">
+                    <div class="name">
+                        Product name
+                        <input type="text" name="" id="productInput">
+                    </div>
+
+                    <div class="name">
+                        Price
+                        <input type="text" name="" id="priceInput">
+                    </div>
+
+                    <div class="name">
+                        Quantity
+                        <input type="text" id="qtyInput">
+                    </div>
+                </div>    
+
+                    <input type="button" value="add" onclick= doAdd();/>
+                    <input type="button" value="refresh" id="refresh"/>
+                    <input type="button" value="delete" id="delete"/>
+            </div>
+
+            <div id="newProductDetails">
+                
+            </div>
+        
+            
+        </div>
+
+        </div>
+
+        <input id="login" value="checkout" type="submit" formaction="/profile-save">
+        </input>
+
+    </center>
+
+</body>
+
+</html>

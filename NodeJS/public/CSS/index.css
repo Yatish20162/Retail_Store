@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+}
+.Products {
+    display: flex;
+    justify-content: center;
+    width: inherit;
+    height: 80px;
+    background-color: aqua;
+  }
+
+  .items {
+    width: inherit;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Products ul {
+    margin: auto;
+    margin-left: 25px;
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .Products ul a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .Slides {
+    height: 300px;
+    width: inherit;
+    background-color: whitesmoke;
+  }
+
+  #login {
+    margin-left: 50px;
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    ;
+    color: blue;
+    border-radius: 5px;
+  }
+  #login a{
+    text-decoration: none;
+
+  }
+
+  #login:hover {
+    color: white;
+    background-color: blue;
+  }
+
+  #Cart {
+    margin-left: 225px;
+  }
+  
+
+  .Slides {
+    width: inherit;
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  .Fashion_Slides {
+    width: inherit;
+    margin-top: 20px;
+    height: 350px;
+  }

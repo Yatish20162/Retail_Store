@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var id=2;
+        function doAddNew()
+            {
+                   var techDiv=document.getElementById("techDiv"); 
+                   var newP=document.createElement("p");
+                   var newBox=document.createElement("input");
+                   newP.appendChild(newBox);
+                   newBox.type="text";
+                   newBox.name="box";
+                  
+                     techDiv.appendChild(newP);
+                     newBox.focus();
+            }
+            function doShow()
+            {
+                var ary=document.getElementsByName("box");
+               // alert(ary.length);
+                for(i=0;i<ary.length;i++)
+                {
+                  var val=ary[i].value;
+                  alert(val);
+                }
+            }
+    </script>
+</head>
+<body>
+    <center>
+        <div style="border: 2px red solid;" id="techDiv">
+            <p><h3>Tech Stack</h3></p>
+            <p>
+                <input type="text" name="box" > <input type="button" value="+" onclick="doAddNew();">
+            </p>
+        </div>
+        <div>
+            <input type="button" value="Show" onclick="doShow();">
+        </div>
+    </center>
+    
+</body>
+</html>
