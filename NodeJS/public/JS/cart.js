@@ -1,4 +1,6 @@
-$(document).ready(function () {
+
+$(document).ready(function () 
+{
     $("#refresh").click(function () {
         $("#qtyInput").val(0);
     })
