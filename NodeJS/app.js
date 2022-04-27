@@ -90,7 +90,7 @@ app.post("/profile-update",function(req,resp){
 
     console.log(req.body);
 
-    dbctrl.query("update retail set customer_ID=? , first_name=?, last_name=? , address=?, city=?,age=?,email=?,mobile=?,cart_ID=?,pincode=?",dataAry,function(err){
+    dbctrl.query("update customer set customer_ID=? , first_name=?, last_name=? , address=?, city=?,age=?,email=?,mobile=?,cart_ID=?,pincode=?",dataAry,function(err){
         if(err)
         console.log(err);
         else{
@@ -100,13 +100,13 @@ app.post("/profile-update",function(req,resp){
 })
 
 
-app.post("/profile-update",function(req,resp){
+app.post("/profile-delete",function(req,resp){
 
     var ID=req.body.txt_ID
 
     console.log(req.body);
 
-    dbctrl.query("delete from retail where customer_ID=? ",[ID],function(err,result){
+    dbctrl.query("delete from customer where customer_ID=? ",[ID],function(err,result){
         if(err)
         console.log(err);
         else if(result.affectedRows==0){
@@ -118,6 +118,65 @@ app.post("/profile-update",function(req,resp){
             resp.send("RECORD DELETED SUCCESFULLY ")
         }
     })
+})
+
+app.post("/profile-max",function(req,resp){
+
+    console.log("lkjbsalk");
+
+    dbctrl.query("select MAX(Cart_Cost) as max_cost from Cart",function(err,result){
+        if(err)
+        console.log(err);
+
+        else
+       resp.send(result);
+    });
+
+})
+
+
+app.post("/profile-sum",function(req,resp){
+
+    console.log("lkjbsalk");
+
+    dbctrl.query("select SUM(Cart_Cost) as SUM from Cart",function(err,result){
+        if(err)
+        console.log(err);
+
+        else
+        resp.send(result);
+    });
+
+})
+
+
+app.post("/profile-avg",function(req,resp){
+
+    console.log("lkjbsalk");
+
+    dbctrl.query("select AVG(Cart_Cost) as AVG from Cart",function(err,result){
+        if(err)
+        console.log(err);
+
+        else
+        resp.send(result);
+    });
+
+})
+
+
+
+app.post("/profile-freq",function(req,resp){
+
+    console.log("lkjbsalk");
+
+    dbctrl.query("SELECT P.Product_Name AS 'Product Name', COUNT(*) AS 'Frequency' FROM Wishlist W, Product P WHERE W.Item_ID = P.Product_ID GROUP BY W.Item_ID ORDER BY COUNT(W.Item_ID) DESC LIMIT 1",function(err,result){
+        if(err)
+        console.log(err);
+        else
+        resp.send(result);
+    });
+
 })
 
 

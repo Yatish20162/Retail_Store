@@ -18,13 +18,13 @@
         <h1> Shopping Cart </h1>
         <div class="CartItems">
             <div>
-                    Net Bill
-                    <input type="button" value="NetBill" id="Net">
-                    <input type="text">
-             </div>
-                
+                Net Bill
+                <input type="button" value="NetBill" id="Net">
+                <input type="text">
+            </div>
+
             <div class="section">
-                
+
                 <div class="elements">
                     <div class="name">
                         Product name
@@ -40,26 +40,36 @@
                         Quantity
                         <input type="text" id="qtyInput">
                     </div>
-                    
-                </div>    
 
-                    <input type="button" value="add" onclick= doAdd();/>
-                    <input type="button" value="refresh" id="refresh"/>
-                    <input type="button" value="delete" id="delete"/>
+                </div>
+
+                <input type="button" value="add" onclick=doAdd() />
+                <input type="button" value="refresh" id="refresh" />
+                <input type="button" value="delete" id="delete" />
             </div>
 
             <div id="newProductDetails">
-                
+
             </div>
-        
+
+
+        </div>
+
+        </div>
+        <form method="post">
+            <input id="login" value="Most_Wished_Product" type="submit" formaction="/profile-freq">
+            </input>
+
+            <input id="login" value="MAX" type="submit" formaction="/profile-max">
+            </input>
+
+            <input id="login" value="SUM" type="submit" formaction="/profile-sum">
             
-        </div>
-
-        </div>
-
-        <input id="login" value="checkout" type="submit" formaction="/profile-save">
+            <input id="login" value="AVERAGE" type="submit" formaction="/profile-avg">
+            </input>
+        
         </input>
-
+        </form>
     </center>
 
 </body>

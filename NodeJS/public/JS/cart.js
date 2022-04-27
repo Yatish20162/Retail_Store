@@ -24,7 +24,7 @@ $(document).ready(function ()
     function doAdd() {
         alert();
         const div=document.querySelector('#newProductDetails'); 
-        div.innerHTML.appendChild("section");
+        div.innerHTML.appendChild("elements");
     }
 })
 
